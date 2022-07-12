@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Higher Lower</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Higher - Lower</title>
+    <!-- CSS -->
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="container">
-    <h1>Higher Lower</h1>
+    <h1>Higher - Lower</h1>
     <p>Guess a number between 1 and 20.</p>
     <div class="row">
-        <div class="col">
+        <div class="col-lg-3 col-md-6">
            <form>
+            <div class="form-group">
             <label for="guess">Your Guess:</label><br>
             <input type="text" id="guess" name="guess">
-            <button id="button" type="button" onclick="number();">Guess</button>
-            <p id="message"></p>
+            <button class="btn btn primary" id="button" type="button" onclick="do_guess();">Guess</button>
+          </div>
            </form>
         </div>
     </div>
+    <p id="message"></p>
 </div>
 	<script src="../js/script.js"></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </body>
 </html>
